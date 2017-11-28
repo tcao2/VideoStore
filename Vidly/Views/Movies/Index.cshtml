@@ -6,7 +6,7 @@
 }
 
 <h2>Movies</h2>
-
+<a href="/Movies/New" class="btn btn-primary">+ Movie</a>
 <table class="table">
     <thead>
         <tr>
@@ -21,7 +21,7 @@
                 <td>
                     <a href="/Movies/Details/@movie.Id">@movie.Name</a>
                 </td>
-                <td>@movie.Genre</td>
+                <td>@movie.Genre.Name</td>
             </tr>
         }
     </tbody>

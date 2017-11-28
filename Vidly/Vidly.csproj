@@ -236,27 +236,33 @@
     <Compile Include="Migrations\201711211643569_UpdateBirthdateFieldToNullable.Designer.cs">
       <DependentUpon>201711211643569_UpdateBirthdateFieldToNullable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201711211655563_AddMovieTable.cs" />
-    <Compile Include="Migrations\201711211655563_AddMovieTable.Designer.cs">
-      <DependentUpon>201711211655563_AddMovieTable.cs</DependentUpon>
+    <Compile Include="Migrations\201711281818558_AddGenreTable.cs" />
+    <Compile Include="Migrations\201711281818558_AddGenreTable.Designer.cs">
+      <DependentUpon>201711281818558_AddGenreTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201711211657480_ApplyAnnotationToMovieModel.cs" />
-    <Compile Include="Migrations\201711211657480_ApplyAnnotationToMovieModel.Designer.cs">
-      <DependentUpon>201711211657480_ApplyAnnotationToMovieModel.cs</DependentUpon>
+    <Compile Include="Migrations\201711281820364_AddMovieTable.cs" />
+    <Compile Include="Migrations\201711281820364_AddMovieTable.Designer.cs">
+      <DependentUpon>201711281820364_AddMovieTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201711211700390_PopulateMovieTable.cs" />
-    <Compile Include="Migrations\201711211700390_PopulateMovieTable.Designer.cs">
-      <DependentUpon>201711211700390_PopulateMovieTable.cs</DependentUpon>
+    <Compile Include="Migrations\201711281821231_SeedGenreTable.cs" />
+    <Compile Include="Migrations\201711281821231_SeedGenreTable.Designer.cs">
+      <DependentUpon>201711281821231_SeedGenreTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711281826584_SeedMovieTable.cs" />
+    <Compile Include="Migrations\201711281826584_SeedMovieTable.Designer.cs">
+      <DependentUpon>201711281826584_SeedMovieTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\NewCustomerViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -323,7 +329,8 @@
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Movies\Random.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
-    <Content Include="Views\Customers\New.cshtml" />
+    <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -374,14 +381,17 @@
     <EmbeddedResource Include="Migrations\201711211643569_UpdateBirthdateFieldToNullable.resx">
       <DependentUpon>201711211643569_UpdateBirthdateFieldToNullable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711211655563_AddMovieTable.resx">
-      <DependentUpon>201711211655563_AddMovieTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201711281818558_AddGenreTable.resx">
+      <DependentUpon>201711281818558_AddGenreTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711211657480_ApplyAnnotationToMovieModel.resx">
-      <DependentUpon>201711211657480_ApplyAnnotationToMovieModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201711281820364_AddMovieTable.resx">
+      <DependentUpon>201711281820364_AddMovieTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711211700390_PopulateMovieTable.resx">
-      <DependentUpon>201711211700390_PopulateMovieTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201711281821231_SeedGenreTable.resx">
+      <DependentUpon>201711281821231_SeedGenreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711281826584_SeedMovieTable.resx">
+      <DependentUpon>201711281826584_SeedMovieTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
